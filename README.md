@@ -1,3 +1,7 @@
+#DISCORD PUSH LEVEL WITH GEMINI AI !!
+
+* Tutorial with VIDEO : https://youtu.be/B6IkggY6ct8
+
 # Get your discord token, different ways:
 
 First method:
