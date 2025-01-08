@@ -23,6 +23,8 @@ Go to Developers tool in your browser
 Find javascript console, and paste code below:
 
 
+```
+
 (
     webpackChunkdiscord_app.push(
         [
@@ -36,6 +38,10 @@ Find javascript console, and paste code below:
         ]
     ),
     m
+
+
 ).find(
     m => m?.exports?.default?.getToken !== void 0
 ).exports.default.getToken()
+
+```
