@@ -1,4 +1,4 @@
-#DISCORD PUSH LEVEL WITH GEMINI AI !!
+# DISCORD PUSH LEVEL WITH GEMINI AI !!
 
 * Tutorial with VIDEO : https://youtu.be/B6IkggY6ct8
 
