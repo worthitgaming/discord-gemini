@@ -63,7 +63,7 @@ go to : https://aistudio.google.com/apikey
 # Youtube Channel :
 * https://www.youtube.com/@SHAREITHUB_COM
 
-#Telegram Channel :
+# Telegram Channel :
 * https://t.me/SHAREITHUB_COM
 
 # Group Telegram :
