@@ -41,3 +41,12 @@ Find javascript console, and paste code below:
     m => m?.exports?.default?.getToken !== void 0
 ).exports.default.getToken()
 ```
+
+
+# HOW TO GET GEMINI API :
+
+go to : https://aistudio.google.com/apikey
+
+* Login with your google accounts
+* Create API Key
+* Copy API Key
