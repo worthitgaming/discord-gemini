@@ -47,6 +47,9 @@ Find javascript console, and paste code below:
 
 go to : https://aistudio.google.com/apikey
 
+
+# PASTE YOUR DISCORD TOKEN & GEMINI API IN FILE .ENV
+
 * Login with your google accounts
 * Create API Key
 * Copy API Key
