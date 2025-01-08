@@ -57,3 +57,14 @@ go to : https://aistudio.google.com/apikey
 * Login with your google accounts
 * Create API Key
 * Copy API Key
+
+
+
+# Youtube Channel :
+* https://www.youtube.com/@SHAREITHUB_COM
+
+#Telegram Channel :
+* https://t.me/SHAREITHUB_COM
+
+# Group Telegram :
+* https://t.me/DISS_SHAREITHUB
