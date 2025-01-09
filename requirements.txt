@@ -1,4 +1,4 @@
-shareithub
+shareithub=3.2.1
 requests
 colorama
 python-dotenv
