@@ -7,14 +7,15 @@ import shareithub
 from dotenv import load_dotenv
 from datetime import datetime
 from shareithub import shareithub
-
 shareithub()
 
-load_dotenv()
 
+load_dotenv()
+# Token dan kunci API
 discord_token = os.getenv('DISCORD_TOKEN')
 google_api_key = os.getenv('GOOGLE_API_KEY')
 
+# Set global untuk menyimpan ID pesan yang telah dibalas
 last_message_id = None
 bot_user_id = None
 
