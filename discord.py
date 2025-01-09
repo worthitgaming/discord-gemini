@@ -7,8 +7,6 @@ import shareithub
 from dotenv import load_dotenv
 from datetime import datetime
 from shareithub import shareithub
-shareithub()
-
 
 load_dotenv()
 # Token dan kunci API
@@ -142,6 +140,8 @@ def auto_reply(channel_id, read_delay, reply_delay):
             except requests.exceptions.RequestException as e:
                 log_message(f"Request error: {e}")
                 time.sleep(read_delay)
+
+shareithub()
 
 if __name__ == "__main__":
     use_google_ai = input("Ingin menggunakan Google Gemini AI? (y/n): ").lower() == 'y'
