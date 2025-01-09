@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 from shareithub import shareithub
 
-
+shareithub()
 
 load_dotenv()
 
@@ -92,7 +92,7 @@ def send_reply(channel_id, message_id, response_text):
             log_message(f"Response content: {response.content.decode()}")
     except requests.exceptions.RequestException as e:
         log_message(f"Request error: {e}")
-shareithub()
+
 def auto_reply(channel_id, read_delay, reply_delay):
         global last_message_id, bot_user_id
 
