@@ -20,14 +20,13 @@ bot_user_id = None
 def log_message(message):
     print(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - {message}")
 
-def generate_reply(prompt, google_api_key, use_google_ai=True):
-    prompt = prompt + " Buatlah menjadi 1 kalimat saja dengan bahasa gaul."
+def generate_reply(prompt, google_api_key, use_google_ai=True, additional_prompt=""):
+    prompt = prompt + " " + additional_prompt 
     
     if use_google_ai:
         url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={google_api_key}'
         headers = {'Content-Type': 'application/json'}
         data = {'contents': [{'parts': [{'text': prompt}]}]}
-
 
         try:
             response = requests.post(url, headers=headers, json=data)
@@ -129,13 +128,15 @@ if __name__ == "__main__":
     
     channel_id = input("Masukkan ID channel: ")
     
-    if use_reply:
-        use_google_ai = input("Ingin menggunakan Google Gemini AI? (y/n): ").lower() == 'y'
-        read_delay = int(input("Set Delay Membaca Pesan Terbaru (dalam detik): "))
-        reply_delay = int(input("Set Delay Balas Pesan (dalam detik): "))
+if use_reply:
+    additional_prompt = input("Masukkan tambahan prompt untuk AI: ")
+    use_google_ai = input("Ingin menggunakan Google Gemini AI? (y/n): ").lower() == 'y'
+    read_delay = int(input("Set Delay Membaca Pesan Terbaru (dalam detik): "))
+    reply_delay = int(input("Set Delay Balas Pesan (dalam detik): "))
 
-        log_message("Mode reply aktif...")
-        auto_reply(channel_id, read_delay, reply_delay, use_google_ai)
+    log_message("Mode reply aktif...")
+    auto_reply(channel_id, read_delay, reply_delay, use_google_ai)
+
     else:
         send_interval = int(input("Set Interval Pengiriman Pesan (dalam detik): "))
 
