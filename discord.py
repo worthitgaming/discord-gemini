@@ -21,10 +21,13 @@ def log_message(message):
     print(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - {message}")
 
 def generate_reply(prompt, google_api_key, use_google_ai=True):
+    prompt = prompt + " Buatlah menjadi 1 kalimat saja dengan bahasa gaul."
+    
     if use_google_ai:
         url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={google_api_key}'
         headers = {'Content-Type': 'application/json'}
         data = {'contents': [{'parts': [{'text': prompt}]}]}
+
 
         try:
             response = requests.post(url, headers=headers, json=data)
