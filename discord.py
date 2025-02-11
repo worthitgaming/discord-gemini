@@ -137,6 +137,13 @@ if use_reply:
     log_message("Mode reply aktif...")
     auto_reply(channel_id, read_delay, reply_delay, use_google_ai)
 
+    else:  # ❌ ERROR: 'else' tidak boleh ada di sini!
+        send_interval = int(input("Set Interval Pengiriman Pesan (dalam detik): "))
+
+        log_message("Mode kirim pesan acak aktif...")
+        auto_send_messages(channel_id, send_interval)
+
+
     else:
         send_interval = int(input("Set Interval Pengiriman Pesan (dalam detik): "))
 
